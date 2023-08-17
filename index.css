@@ -1,0 +1,33 @@
+body {
+  background-color:black;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+    font-size: 50px;
+    color:white;
+    background-color:transparent;
+    padding:40px 200px;
+    box-shadow: 16px 14px 20px rgb(4, 75, 56);
+    border-radius:10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #fff;
+    }
+    50% {
+      box-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+    }
+    100% {
+      box-shadow: 0 0 5px #fff;
+    }
+  }
+
+
